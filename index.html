@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsraelCapsMx - Nueva Colección</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            500: '#ffffff',
+                            900: '#0a0a0a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ocultar barra de scroll para los filtros horizontales */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-neutral-950 flex justify-center text-white antialiased min-h-screen">
+
+    <!-- Contenedor App -->
+    <div class="w-full bg-[#0a0a0a] min-h-screen relative pb-24 overflow-x-hidden">
+
+        <!-- Header -->
+        <header class="sticky top-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-xl border-b border-white/10">
+            <div class="flex items-center justify-between px-5 py-4 max-w-7xl mx-auto w-full">
+                <div class="flex items-center gap-3">
+                    <img src="logo/657124181_1840298150171602_5913166234876264116_n.jpg" alt="Logo" class="h-10 w-10 rounded-full object-cover border border-neutral-800">
+                    <div class="font-display font-black text-xl tracking-tighter uppercase italic hidden sm:block">
+                        IsraelCaps<span class="text-neutral-500">Mx</span>
+                    </div>
+                </div>
+                <button class="relative hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-cart-shopping text-xl"></i>
+                    <span class="absolute -top-1.5 -right-2.5 bg-white text-black text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center ring-2 ring-[#0a0a0a]">2</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Hero Section (Banner Principal) -->
+        <section class="relative">
+            <div class="h-[60vh] sm:h-[65vh] lg:h-[80vh] w-full relative group bg-neutral-900">
+                <img src="gorras/IMG_6959.webp" class="w-full h-full object-cover object-center opacity-80" alt="Colección Urbana">
+                <!-- Overlay degradado para texto legible -->
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/50 to-transparent"></div>
+                
+                <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-12 flex flex-col items-center text-center max-w-7xl mx-auto">
+                    <span class="bg-white/10 backdrop-blur-md text-white px-3 py-1 lg:px-4 lg:py-1.5 rounded-full text-[10px] lg:text-xs font-bold tracking-widest uppercase mb-4 lg:mb-6 border border-white/20">Drop 001</span>
+                    <h1 class="font-display font-black text-4xl lg:text-6xl mb-3 lg:mb-5 uppercase leading-[1.1] text-white">Llegó la nueva<br>colección</h1>
+                    <p class="text-neutral-300 mb-6 lg:mb-8 font-medium text-sm lg:text-base max-w-[280px] lg:max-w-md">Eleva tu estilo con nuestras gorras más exclusivas.</p>
+                    <button class="bg-white text-black font-bold uppercase tracking-widest py-3.5 px-8 lg:py-4 lg:px-10 rounded-full text-sm lg:text-base w-full max-w-[280px] lg:max-w-[320px] hover:bg-neutral-200 active:scale-95 transition-all shadow-lg shadow-white/10">Ver Catálogo</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filtros Rápidos -->
+        <section class="px-5 py-6 lg:py-10 max-w-7xl mx-auto w-full">
+            <div class="flex overflow-x-auto space-x-3 pb-2 hide-scrollbar lg:justify-center">
+                <button class="bg-white text-black px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider whitespace-nowrap shadow-md">Todas</button>
+                <button class="bg-neutral-900 text-neutral-400 px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider whitespace-nowrap border border-neutral-800 hover:text-white hover:border-neutral-600 transition-colors">G5</button>
+                <button class="bg-neutral-900 text-neutral-400 px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider whitespace-nowrap border border-neutral-800 hover:text-white hover:border-neutral-600 transition-colors">NE</button>
+                <button class="bg-neutral-900 text-neutral-400 px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider whitespace-nowrap border border-neutral-800 hover:text-white hover:border-neutral-600 transition-colors">Snapback</button>
+            </div>
+        </section>
+
+        <!-- Grid de Productos -->
+        <section class="px-5 max-w-7xl mx-auto w-full">
+            <div class="flex items-center justify-between mb-6 lg:mb-8">
+                <h2 class="font-display font-bold text-lg lg:text-2xl uppercase tracking-wider">Tendencias</h2>
+                <a href="#" class="text-neutral-400 text-xs font-semibold uppercase tracking-wider hover:text-white transition-colors">Ver todo</a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
+                <!-- Producto 1 -->
+                <div class="bg-neutral-900 rounded-2xl overflow-hidden border border-neutral-800 flex flex-col group relative">
+                    <div class="relative aspect-square bg-neutral-800 overflow-hidden">
+                        <img src="gorras/IMG_6964.webp" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Gorra 1">
+                        <button class="absolute bottom-2 right-2 bg-white/90 backdrop-blur-sm text-black w-9 h-9 rounded-full flex items-center justify-center hover:bg-white active:scale-90 transition-all z-10 shadow-lg">
+                            <i class="fa-solid fa-plus text-sm"></i>
+                        </button>
+                    </div>
+                    <div class="p-3.5 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h3 class="font-bold text-sm text-white leading-tight">Gorra NY Blackout</h3>
+                            <p class="text-neutral-500 text-[10px] mt-1 uppercase tracking-wider font-semibold">G5 Premium</p>
+                        </div>
+                        <p class="font-display font-bold mt-2.5 text-sm text-white">$400 MXN</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="bg-neutral-900 rounded-2xl overflow-hidden border border-neutral-800 flex flex-col group relative">
+                    <div class="relative aspect-square bg-neutral-800 overflow-hidden">
+                        <img src="gorras/IMG_6972.webp" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Gorra 2">
+                        <button class="absolute bottom-2 right-2 bg-white/90 backdrop-blur-sm text-black w-9 h-9 rounded-full flex items-center justify-center hover:bg-white active:scale-90 transition-all z-10 shadow-lg">
+                            <i class="fa-solid fa-plus text-sm"></i>
+                        </button>
+                    </div>
+                    <div class="p-3.5 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h3 class="font-bold text-sm text-white leading-tight">Gorra LA Dodger</h3>
+                            <p class="text-neutral-500 text-[10px] mt-1 uppercase tracking-wider font-semibold">New Era</p>
+                        </div>
+                        <p class="font-display font-bold mt-2.5 text-sm text-white">$450 MXN</p>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="bg-neutral-900 rounded-2xl overflow-hidden border border-neutral-800 flex flex-col group relative">
+                    <div class="relative aspect-square bg-neutral-800 overflow-hidden">
+                        <img src="gorras/IMG_6981.webp" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Gorra 3">
+                        <button class="absolute bottom-2 right-2 bg-white/90 backdrop-blur-sm text-black w-9 h-9 rounded-full flex items-center justify-center hover:bg-white active:scale-90 transition-all z-10 shadow-lg">
+                            <i class="fa-solid fa-plus text-sm"></i>
+                        </button>
+                    </div>
+                    <div class="p-3.5 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h3 class="font-bold text-sm text-white leading-tight">Bulls Classic Red</h3>
+                            <p class="text-neutral-500 text-[10px] mt-1 uppercase tracking-wider font-semibold">Snapback</p>
+                        </div>
+                        <p class="font-display font-bold mt-2.5 text-sm text-white">$380 MXN</p>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="bg-neutral-900 rounded-2xl overflow-hidden border border-neutral-800 flex flex-col group relative">
+                    <div class="relative aspect-square bg-neutral-800 overflow-hidden">
+                        <img src="gorras/IMG_6991.webp" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Gorra 4">
+                        <button class="absolute bottom-2 right-2 bg-white/90 backdrop-blur-sm text-black w-9 h-9 rounded-full flex items-center justify-center hover:bg-white active:scale-90 transition-all z-10 shadow-lg">
+                            <i class="fa-solid fa-plus text-sm"></i>
+                        </button>
+                    </div>
+                    <div class="p-3.5 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h3 class="font-bold text-sm text-white leading-tight">Yankees White Sand</h3>
+                            <p class="text-neutral-500 text-[10px] mt-1 uppercase tracking-wider font-semibold">G5 Premium</p>
+                        </div>
+                        <p class="font-display font-bold mt-2.5 text-sm text-white">$420 MXN</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón Flotante de WhatsApp -->
+        <a href="#" class="fixed bottom-6 right-6 lg:bottom-8 lg:right-8 bg-[#25D366] text-white w-[60px] h-[60px] lg:w-[70px] lg:h-[70px] rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:-translate-y-1 hover:scale-105 active:scale-95 transition-all z-50">
+            <i class="fa-brands fa-whatsapp text-[32px] lg:text-[40px]"></i>
+        </a>
+
+    </div>
+
+</body>
+</html>
